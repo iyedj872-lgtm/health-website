@@ -1,0 +1,7 @@
+# Activer le module de réécriture
+RewriteEngine On
+
+# Si l'URL est exactement la racine
+RewriteCond %{REQUEST_URI} ^/$
+# Rediriger vers /pages/
+RewriteRule ^$ /pages/ [R=301,L]
